@@ -5,9 +5,10 @@ header{
 .jumbotron{
     font-size: 30px;
     padding: 70px;
-    background-color: coral;
+    background-size: cover;
     text-align: center;
-    color: wheat;
+    color: grey;
+	background-image: url(http://blog.davidstea.com/en/wp-content/uploads/2019/06/blog_bubble-tea_hero.jpg); 
 }
 
 nav{
@@ -27,4 +28,133 @@ nav li{
 footer{
     padding: 50px;
     background-color:chocolate;
+}
+
+@media screen and (max-width:1200px){
+    .inner-overview{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-overview{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-overview{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .overview{
+        padding: 0;
+    }
+    .inner-overview{
+        padding: 60px;
+    }
+}
+
+.container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 10%;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: white;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+
+.box .imgBx {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+  opacity: 0;
+}
+
+.box .content {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.box:hover .content {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.box .content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.box .content p {
+  margin: 10px 0 0;
+  padding: 0;
+  opacity: 0;
+  line-height: 1.2em;
+  transition: 0.5s;
+  text-align: justify;
+}
+
+.box:hover .content p {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.boba{
+      padding-top: 10px;
+      padding-bottom: 30px;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+
+}
+.boba h2{
+      text-align: center;
+      font-size: 2rem;
+	  font-family : 'Cooper Std Black';
+}
+.boba p{
+      text-align: center;
+      font-size: 0.9rem;
+	  font-family : 'Adobe Gothic Std';
 }
