@@ -1,28 +1,96 @@
-header{
-    display: inline;
+body{
+  margin: 0;
 }
 
-.jumbotron{
-    font-size: 30px;
-    padding: 70px;
-    background-size: cover;
-    text-align: center;
-    color: grey;
-	background-image: url(http://blog.davidstea.com/en/wp-content/uploads/2019/06/blog_bubble-tea_hero.jpg); 
+header {
+  height: 85px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  /* Ubah position ke fixed, dan top ke 0 */
+  position: fixed;
+  top: 0;
+  
+  /* Ubah z-index ke 10 */
+  z-index: 10;
 }
 
-nav{
-    display: inline;
-    padding: 5px;
-    position: sticky;
-    top: 0;
-    color: black
+.cont {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-nav li{
-    display: inline;
-    list-style-type: none;
-    margin-left: 30px;
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  font-size: 60px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper h3 {
+  font-size: 30px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  margin-bottom: 3px;
+}
+
+.logo {
+  width: 85px;
+  margin-bottom: 10px;
+  /*margin-left: 10px;*/
+}
+
+.header-lefttext{
+  float: left;
+  color: #ffff;
+  font-family: "MV Boli";
+}
+
+.header-lefttext span{
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  /*padding-right: 30px;*/
+}
+
+.header-right a {
+  float: left;
+  padding: 13px 10px 13px 10px;
+  padding-bottom: 22px;
+  font-family: "Lucida Fax";
+  color: #ffff;
+  text-decoration: none;
+  line-height: 50px;
+  transition: all 0.5s;
+  /*display: block;*/
+}
+
+.header-right a:hover {
+  background-color: rgba(200, 255, 255, 0.5);
+}
+
+.menu-icon{
+  color: white;
+  float: right;
+  display: none;
 }
 
 footer{
@@ -47,19 +115,48 @@ footer{
 }
 
 @media screen and (max-width:600px){
-    .overview{
-        padding: 0;
-    }
-    .inner-overview{
-        padding: 60px;
-    }
+  .overview{
+      padding: 0;
+  }
+  .inner-overview{
+      padding: 60px;
+  }
+
+  .top-wrapper {
+  text-align: left;
+  }
+  
+  /* Tambahkan CSS untuk header-right */
+  .header-right{
+    display: none;
+  }
+  
+  /* Tambahkan CSS untuk menu-icon */
+  .menu-icon{
+    display: block;
+  }
+  
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .top-wrapper h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .container {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 50px;
-  padding-right: 10%;
+  /*padding-right: 10%;*/
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-wrap: wrap;
